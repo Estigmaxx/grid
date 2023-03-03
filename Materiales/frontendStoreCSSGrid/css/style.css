@@ -145,9 +145,13 @@ h1{
     grid-gap: 7rem;
 }
 
+
+
+
 .imagen{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .descripcion-nosotros p{
@@ -181,4 +185,44 @@ h1{
     font-weight: bold;
 
     text-transform: uppercase;
+}
+
+.formulario-pedido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    grid-gap:2rem ;
+    margin-top: 3rem;
+}
+
+.campo{
+    background-color: transparent;
+    border: 3px solid #fff;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.talla{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    grid-column: 1/3;
+}
+
+.btn{
+    background-color: var(--secundario);
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    border: none;
+
+    transition: background-color .3s ease;
+
+    grid-column: 1/4;
+    
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(233,187,2);
 }
